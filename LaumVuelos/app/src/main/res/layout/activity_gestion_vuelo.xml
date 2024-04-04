@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonuevovuelo"
+    tools:context=".GestionVuelo">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/bebas"
+        android:text="@string/Emp_SeleccioneOp"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNewVuelo"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/Emp_NuevoVuelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/buttonModVuelo"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Emp_ModificarVuelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNewVuelo" />
+
+    <Button
+        android:id="@+id/buttonCancelarVuelo"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Emp_CancelarVuelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModVuelo" />
+
+    <Button
+        android:id="@+id/buttonVerVuelos"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Emp_VerVuelos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCancelarVuelo" />
+
+    <Button
+        android:id="@+id/buttonVolverGV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGestionarTarifa" />
+
+    <Button
+        android:id="@+id/buttonGestionarTarifa"
+        android:layout_width="190dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Emp_GestionarTarifa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVerVuelos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoingresardatos"
+    tools:context=".EfectuarReserva">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="406dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/textViewMesReserva"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bebas"
+            android:text="@string/GestVuelos_AltaVuelo_Fechames"
+            android:textColor="@color/ColorPrincipal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextMesReserva"
+            android:layout_width="261dp"
+            android:layout_height="50dp"
+            android:background="#80FFFFFF"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="..." />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewReservas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginRight="143dp"
+        android:baselineAligned="false"
+        android:fontFamily="@font/bebas"
+        android:text="@string/texto_reservas"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReservas1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="406dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/textViewAnioReserva"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bebas"
+            android:text="@string/GestVuelos_AltaVuelo_Fechaaño"
+            android:textColor="@color/ColorPrincipal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextAnioReserva"
+            android:layout_width="261dp"
+            android:layout_height="50dp"
+            android:background="#80FFFFFF"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="4"
+            android:text="..." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="406dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReservas2">
+
+        <TextView
+            android:id="@+id/textViewDiaReserva"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bebas"
+            android:text="@string/GestVuelos_AltaVuelo_Fechadia"
+            android:textColor="@color/ColorPrincipal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextDiaReserva"
+            android:layout_width="261dp"
+            android:layout_height="50dp"
+            android:background="#80FFFFFF"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="..." />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="127dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/textCancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonBuscarViaje"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxReserva" />
+
+    <TextView
+        android:id="@+id/textViewReservas1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bebas"
+        android:text="@string/título_reservas"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewReservas2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBuscarViaje"
+        android:layout_width="127dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/texto_buscar_reserva"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxReserva" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="406dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxReserva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/textViewCant"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bebas"
+            android:text="Cantidad:"
+            android:textColor="@color/ColorPrincipal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextCant"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:background="#80FFFFFF"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="" />
+
+        <android.widget.Button
+            android:id="@+id/buttonCant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/botonPasajeros" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxReserva"
+        android:layout_width="163dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:fontFamily="@font/bebas"
+        android:text="@string/texto_sinFecha"
+        android:textColor="@color/ColorPrincipal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

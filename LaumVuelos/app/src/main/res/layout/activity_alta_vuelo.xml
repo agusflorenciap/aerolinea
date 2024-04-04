@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondovuelogestiones"
+    tools:context=".AltaVuelo">
+
+
+    <ScrollView
+        android:layout_width="390dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbarThumbVertical="@drawable/scroll_list_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.108">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="44dp"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="39dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/GestVuelos_AltaVuelo_Id"
+                    android:textColor="@color/ColorPrincipal"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/editTextIdAV"
+                    android:layout_width="261dp"
+                    android:layout_height="50dp"
+                    android:background="#80FFFFFF"
+                    android:layout_weight="1"
+                    android:ems="10"
+
+                    android:inputType="number"
+                    android:text="Ingrese aqui..." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="156dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/GestVuelos_AltaVuelo_Fecha"
+                    android:textColor="@color/ColorPrincipal"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textViewDiaReserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/GestVuelos_AltaVuelo_Fechadia"
+                    android:textColor="@color/ColorPrincipal"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editTextDiaAV"
+                    android:layout_width="261dp"
+                    android:layout_height="50dp"
+                    android:background="#80FFFFFF"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:text="..." />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textViewMesAV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/GestVuelos_AltaVuelo_Fechames"
+                    android:textColor="@color/ColorPrincipal"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editTextMesAV"
+                    android:layout_width="261dp"
+                    android:layout_height="50dp"
+                    android:background="#80FFFFFF"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:text="..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textViewAñoAV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/GestVuelos_AltaVuelo_Fechaaño"
+                    android:textColor="@color/ColorPrincipal"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editTextAñoAV"
+                    android:layout_width="261dp"
+                    android:layout_height="50dp"
+                    android:background="#80FFFFFF"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:text="..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textViewHyM"
+                    android:layout_width="44dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/texto_FechaHyM"
+                    android:textColor="@color/ColorPrincipal"
+                    android:textSize="15sp" />
+
+                <TimePicker
+                    android:id="@+id/timepickerVuelo"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:calendarViewShown="false"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:timePickerMode="spinner" />
+
+                <android.widget.Button
+                    android:id="@+id/elegir_HoraAV"
+                    android:layout_width="47dp"
+                    android:layout_height="40dp"
+                    android:text="⏰ " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxRestriccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/ColorPrincipal"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/Restricciones" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonAVCancel"
+                    android:layout_width="127dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="110dp"
+                    android:text="@string/textCancelar" />
+
+                <Button
+                    android:id="@+id/buttonAVConfirmar"
+                    android:layout_width="127dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"
+                    android:text="@string/Emp_TarifaConfirmar" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/bebas"
+        android:text="@string/GestVuelos_AltaVuelo_IngresoDatos"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

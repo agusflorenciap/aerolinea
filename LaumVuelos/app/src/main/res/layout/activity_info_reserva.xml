@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondovuelogestiones"
+    tools:context=".VerVueloDatos"
+    tools:layout_editor_absoluteX="-8dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <TextView
+        android:id="@+id/textViewIR14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginEnd="311dp"
+        android:layout_marginRight="311dp"
+        android:fontFamily="@font/bebas"
+        android:text="IMPORTES"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIR6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIR4" />
+
+    <TextView
+        android:id="@+id/textViewIR8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="DESCUENTO PROMOCION: $"
+        android:textColor="@color/ColorPrincipal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIR5"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIR11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIR7" />
+
+    <TextView
+        android:id="@+id/textViewIR13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="XXXX"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIR5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIR5"
+        app:layout_constraintTop_toTopOf="@+id/textViewIR5" />
+
+    <TextView
+        android:id="@+id/textViewIR10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="XXXX"
+        android:textColor="@color/ColorPrincipal"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIR7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIR7"
+        app:layout_constraintTop_toTopOf="@+id/textViewIR7" />
+
+    <TextView
+        android:id="@+id/textViewIR6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="ASIENTOS: $"
+        android:textColor="@color/ColorPrincipal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIR7"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIR9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIR14" />
+
+    <TextView
+        android:id="@+id/textViewIR9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="ASIENTOS"
+        android:textColor="@color/ColorPrincipal"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIR6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIR6"
+        app:layout_constraintTop_toTopOf="@+id/textViewIR6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewIR11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="XXXX"
+        android:textColor="@color/ColorPrincipal"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIR8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIR8"
+        app:layout_constraintTop_toTopOf="@+id/textViewIR8" />
+
+    <TextView
+        android:id="@+id/textViewIR7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="IMPUESTO APLICADO: $"
+        android:textColor="@color/ColorPrincipal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIR8"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIR10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIR6" />
+
+    <TextView
+        android:id="@+id/textViewIR5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="total: $"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVolverIR"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIR13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIR8" />
+
+
+    <TextView
+        android:id="@+id/textViewInfoReserva"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/bebas"
+        android:gravity="center"
+        android:text="@string/tituloInfoReserv"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="hora"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIR3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIR3"
+        app:layout_constraintTop_toTopOf="@+id/textViewIR3" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="ASIENTOS"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIR4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIR4"
+        app:layout_constraintTop_toTopOf="@+id/textViewIR4" />
+
+    <TextView
+        android:id="@+id/textViewIR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="ID Vuelo"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIR2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfoReserva" />
+
+    <TextView
+        android:id="@+id/textViewIR4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="Asientos:"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIR14"
+        app:layout_constraintEnd_toStartOf="@+id/textView31"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIR3" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="Fecha:"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIR3"
+        app:layout_constraintEnd_toStartOf="@+id/textView25"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIR1" />
+
+    <TextView
+        android:id="@+id/textViewIR3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="Hora:"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIR4"
+        app:layout_constraintEnd_toStartOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textViewIR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="código"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIR1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIR1"
+        app:layout_constraintTop_toTopOf="@+id/textViewIR1" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="fecha"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/buttonVolverIR"
+        android:layout_width="131dp"
+        android:layout_height="41dp"
+
+        android:layout_marginBottom="45dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonConfirmarIR"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIR5" />
+
+    <Button
+        android:id="@+id/buttonConfirmarIR"
+        android:layout_width="131dp"
+        android:layout_height="41dp"
+
+        android:layout_marginBottom="45dp"
+        android:text="PAGAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonVolverIR"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIR13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="629dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="39dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

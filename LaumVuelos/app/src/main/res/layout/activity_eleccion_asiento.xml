@@ -1,0 +1,2845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfaea7"
+    tools:context=".EleccionAsiento">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="264dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="75dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="92dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="144dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="200dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="319dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="A"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="B"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="C"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="D"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="E"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bebas"
+        android:text="F"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button1"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button2"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button3"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button4"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button5"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button6"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button7"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button8"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button9"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button10"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button11"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button12"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button13"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button14"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button15"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button16"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button17"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button18"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button19"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button20"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button21"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button22"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button23"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button24"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button25"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button26"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button27"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button28"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button29"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button30"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+
+                <android.widget.Button
+                    android:id="@+id/button31"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button32"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button33"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button34"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button35"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button36"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button37"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button38"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button39"
+
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button40"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button41"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button42"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button43"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button44"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button45"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button46"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button47"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button48"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button49"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button50"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button51"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button52"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button53"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button54"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button55"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button56"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button57"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button58"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button59"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button60"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button61"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button62"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button63"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button64"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button65"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button66"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button67"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button68"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button69"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button70"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button71"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button72"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button73"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button74"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button75"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button76"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button77"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button78"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button79"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button80"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button81"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button82"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button83"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button84"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button85"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button86"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button87"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button88"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button89"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button90"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button91"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button92"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button93"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button94"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button95"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button96"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button97"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button98"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button99"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button100"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button101"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button102"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button103"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button104"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button105"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button106"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button107"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button108"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button109"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button110"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button111"
+
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button112"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button113"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button114"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button115"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button116"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button117"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button118"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button119"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button120"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button121"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button122"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button123"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button124"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button125"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button126"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button127"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button128"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button129"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button130"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button131"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button132"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button133"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button134"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button135"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button136"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button137"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button138"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button139"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button140"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button141"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button142"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button143"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button144"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button145"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button146"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button147"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button148"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button149"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button150"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button151"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button152"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button153"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button154"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button155"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button156"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button157"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button158"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button159"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button160"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button161"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button162"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button163"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button164"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button165"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button166"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button167"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button168"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button169"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button170"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button171"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button172"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button173"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button174"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button175"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button176"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button177"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button178"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button179"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button180"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button181"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button182"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button183"
+
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button184"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button185"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button186"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button187"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button188"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button189"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button190"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button191"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button192"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button193"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button194"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button195"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button196"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button197"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button198"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button199"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button200"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button201"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button202"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button203"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button204"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button205"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button206"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button207"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button208"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button209"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button210"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button211"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button212"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button213"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button214"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button215"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button216"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button217"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button218"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button219"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button220"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button221"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button222"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button223"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button224"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button225"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button226"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button227"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button228"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button229"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button230"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button231"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button232"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button233"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button234"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button235"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button236"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button237"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button238"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button239"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button240"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button241"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button242"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button243"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button244"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button245"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button246"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button247"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button248"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button249"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button250"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button251"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button252"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button253"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button254"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button255"
+
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button256"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button257"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button258"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button259"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button260"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button261"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button262"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button263"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button264"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button265"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button266"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button267"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button268"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button269"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button270"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button271"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button272"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button273"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button274"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button275"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button276"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button277"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button278"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button279"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button280"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button281"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button282"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button283"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button284"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button285"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button286"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button287"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button288"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button289"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button290"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button291"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button292"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button293"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button294"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button295"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button296"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button297"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button298"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button299"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button300"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.widget.Button
+                    android:id="@+id/button301"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button302"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button303"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button304"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button305"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+
+                <android.widget.Button
+                    android:id="@+id/button306"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:onClick="marcarAsiento" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="210dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3">
+
+        <Button
+            android:id="@+id/buttonEACancel"
+            android:layout_width="127dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:text="@string/textCancelar" />
+
+        <Button
+            android:id="@+id/buttonEAsig"
+            android:layout_width="127dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/Siguiente" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

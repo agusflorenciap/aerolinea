@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondovuelogestiones"
+    tools:context=".ModCanVuelo">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="350dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDatosVuelo"
+        app:layout_constraintVertical_bias="0.108">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDatosVuelo">
+
+                <TextView
+                    android:id="@+id/textViewDiaV"
+                    android:layout_width="1dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/GestVuelos_AltaVuelo_Fechadia"
+                    android:textColor="@color/ColorPrincipal"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editTextDiaMCV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:text="..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                <TextView
+                    android:id="@+id/textViewMesV"
+                    android:layout_width="1dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/GestVuelos_AltaVuelo_Fechames"
+                    android:textColor="@color/ColorPrincipal"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editTextMesV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:text="..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+                <TextView
+                    android:id="@+id/textViewAnioV"
+                    android:layout_width="1dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/GestVuelos_AltaVuelo_Fechaaño"
+                    android:textColor="@color/ColorPrincipal"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editTextAnioV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:text="...." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+                <TextView
+                    android:id="@+id/textViewHyMMC"
+                    android:layout_width="44dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebas"
+                    android:text="@string/texto_FechaHyM"
+                    android:textColor="@color/ColorPrincipal"
+                    android:textSize="15sp" />
+
+                <TimePicker
+                    android:id="@+id/timepickerVueloMod"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:calendarViewShown="false"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:timePickerMode="spinner" />
+
+                <android.widget.Button
+                    android:id="@+id/elegir_Horamc"
+                    android:layout_width="47dp"
+                    android:layout_height="40dp"
+                    android:text="⏰ " />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <ListView
+        android:id="@+id/listVuelos"
+        android:layout_width="373dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlistavuelos" />
+
+    <TextView
+        android:id="@+id/textViewlistavuelos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/bebas"
+        android:text="@string/texto_GestVuelosLista"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDatosVuelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/bebas"
+        android:text="@string/texto_GestVuelosDatos"
+        android:textColor="@color/ColorPrincipal"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listVuelos" />
+
+
+    <Button
+        android:id="@+id/buttonCancelMCV"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/textCancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAceptMCV"
+        app:layout_constraintTop_toBottomOf="@+id/listVuelos"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <Button
+        android:id="@+id/buttonAceptMCV"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/textAceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listVuelos"
+        app:layout_constraintVertical_bias="0.495" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
